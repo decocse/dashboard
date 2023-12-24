@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  margin: 20px auto;
+}
+
+svg {
+  border: 1px solid #ddd; /* Adjust border color */
+  border-radius: 8px;
+  overflow: visible;
+  background-color: #f5f5f5; /* Set background color */
+}
+
+rect {
+  fill: #007bff; /* Bar fill color */
+  transition: fill 0.3s ease; /* Add transition effect */
+}
+
+rect:hover {
+  fill: #0056b3; /* Change color on hover */
+}
+
+.axis text {
+  font-size: 12px; /* Adjust axis label font size */
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000; /* Adjust axis line color */
+  shape-rendering: crispEdges;
+}

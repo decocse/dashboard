@@ -1,0 +1,16 @@
+<div *ngIf="data.length > 0" class="container">
+    <div class="insights">
+      <h2 class="insights-heading">Insights</h2>
+      <ul class="insights-list">
+        <li *ngFor="let insight of data" class="insight-item">
+          <h3 class="insight-title">{{ insight.title }}</h3>
+          <p><span class="intensity-text">Intensity:</span> {{ insight.intensity }}</p>
+          <!-- Add styling for other properties as needed -->
+        </li>
+      </ul>
+    </div>
+    <div class="chart">
+      <app-chart-bar></app-chart-bar>
+    </div>
+  </div>
+  
